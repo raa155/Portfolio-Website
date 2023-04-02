@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Roman Abad Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+
+         <!-- NavBar -->
+        <nav>
+            <ul class="nav-container">
+                <h1>Roman Abad</h1>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" id="contact" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="mobile-nav-item"><img src="./img/mobile-nav.png" alt=""></li>
+            </ul>
+        </nav>
+    
+        <!-- Header Section -->
+        <section class="header">
+            <div id="particles-js"><canvas class="particles-js-canvas-el" width="1638" height="1400" style="width: 100%; height: 100%;"></canvas></div>
+            <div class="header-container">
+            <div class="header-content">
+                <div class="header-info">
+                    <div class="title-img-container">
+                        <h1>Front End Developer</h1> 
+                        <a class="github-img-container" href="#"><img class="github-img" src="./img/github.png" alt="Github Projects" title="Github Projects"></a>
+                    </div>
+                    <p>The names roman and i know my way around a div or two.</p>
+                    <p><b>Tech Stack:</b></p>
+                    <div class="tech-stack-container">
+                        <img class="tech-icons" src="./img/html.png" alt="HTML 5" title="HTML 5">
+                        <img class="tech-icons" src="./img/css-3.png" alt="CSS 3" title="CSS 3">
+                        <img class="tech-icons" src="./img/js.png" alt="Javascript" title="Javascript">
+                        <img class="tech-icons" src="./img/react.png" alt="React" title="React">
+                        <img class="tech-icons" src="./img/node-js.png" alt="Node" title="Node">
+                    </div>
+                </div>
+                <div class="header-img"><img src="./img/profile.jpg" alt="This handsome gentleman is me.. Roman!" title="This handsome gentleman is me.. Roman!"></div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Project Section -->
+        <section class="projects">
+            <div class="project-container">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-grid">
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="item-1">
+                                <h2>Project Item</h2>
+                                <p>Project Description</p>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="footer-copyright">© 2023 Roman Abad</p>
+            <ul class="footer-links-container">
+                <li class="footer-links"><a href="https://www.linkedin.com/in/romanabad/"><i class="fa fa-linkedin"></i></a></li>
+                <li class="footer-links"><a href="https://github.com/raa155?tab=repositories"><i class="fa fa-github-alt"></i></a></li>
+                <li class="footer-links"><a href="https://meta.stackexchange.com/users/859220/roman-abad?tab=profile"><i class="fa fa-stack-overflow"></i></a></li>
+                <li id="scroll-up" class="footer-links up-arrow"><a><i class="fa fa-angle-up"></i></a></li>
+            </ul>
+        </footer>
+    
+        <!-- Contact Form -->
+        <section class="contact-section" id="contact-form" >
+            <div id="popupContact">
+                <a onclick="hideContact()" id="close" ><i class="fa fa-close"></i></a>
+                <form  id="form" method="POST" name="myemailform" action="form-to-email.php">
+                    
+                    <h2 class="contact-header">Ready to get started? <p class="contact-description">I'll buy the coffee.</p></h2>
+                    <hr>
+    
+                    <input id="name" name="name" placeholder="Name" type="text">
+                    <input id="email" name="mail" placeholder="Email" type="text">
+                    <textarea id="msg" name="message" placeholder="Message"></textarea>
+                    <button onclick="checkIfEmpty()" class="send-button" type="submit" name="submit" id="submit">Send</button>
+                </form>        
+            </div>
+        </section>
+    
+    </div>
+   
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/1b7fca33f8.js" crossorigin="anonymous"></script>
+
+    <script>
+        /* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+"particles": {
+"number": {
+"value": 50,
+"density": {
+"enable": true,
+"value_area": 800
+}
+},
+"color": {
+"value": "#ffffff"
+},
+"shape": {
+"type": "circle",
+"stroke": {
+"width": 0,
+"color": "#000000"
+},
+"polygon": {
+"nb_sides": 5
+},
+"image": {
+"src": "img/github.svg",
+"width": 100,
+"height": 100
+}
+},
+"opacity": {
+"value": 0.5,
+"random": false,
+"anim": {
+"enable": false,
+"speed": 1,
+"opacity_min": 0.1,
+"sync": false
+}
+},
+"size": {
+"value": 3,
+"random": true,
+"anim": {
+"enable": false,
+"speed": 40,
+"size_min": 0.1,
+"sync": false
+}
+},
+"line_linked": {
+"enable": true,
+"distance": 150,
+"color": "#ffffff",
+"opacity": 0.4,
+"width": 1
+},
+"move": {
+"enable": true,
+"speed": 6,
+"direction": "none",
+"random": false,
+"straight": false,
+"out_mode": "out",
+"bounce": false,
+"attract": {
+"enable": false,
+"rotateX": 600,
+"rotateY": 1200
+}
+}
+},
+"interactivity": {
+"detect_on": "canvas",
+"events": {
+"onhover": {
+"enable": true,
+"mode": "grab"
+},
+"onclick": {
+"enable": true,
+"mode": "push"
+},
+"resize": true
+},
+"modes": {
+"grab": {
+"distance": 140,
+"line_linked": {
+  "opacity": 1
+}
+},
+"bubble": {
+"distance": 400,
+"size": 40,
+"duration": 2,
+"opacity": 8,
+"speed": 3
+},
+"repulse": {
+"distance": 200,
+"duration": 0.4
+},
+"push": {
+"particles_nb": 4
+},
+"remove": {
+"particles_nb": 2
+}
+}
+},
+"retina_detect": true
+});
+</script>
+</body>
+</html>
